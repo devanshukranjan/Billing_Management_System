@@ -21,7 +21,12 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true)
   </head>
   <body>
   <?php require 'partilas/_nav.php';?>
-  welcome - <?php echo $_SESSION['username'];?>
+ 
+  <div class="contaner my-4">
+    <div class="alert alert-success" role="alert">
+      <h4 class="alert-heading"> welcome - <?php echo $_SESSION['username'];?></h4>
+    </div>
+</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
